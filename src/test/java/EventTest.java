@@ -20,5 +20,16 @@ public class EventTest {
         Event testEvent = new Event();
         assertEquals(0, testEvent.getGuestCount());
     }
+    @Test
+    public void Food_getCost_4() {
+        Food testFood = new Food("Pizza");
+        assertEquals(5, testFood.getCost());
+    }
+    @Test
+    public void Event_addFood_5() {
+        Event testEvent = new Event(0);
+        testEvent.addFood("Pizza");
+    }
+
 
 }
