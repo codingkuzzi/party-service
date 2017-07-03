@@ -1,35 +1,20 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class EventTest {
 
-
-
-    /*@Test
-    public void newEvent_instantiatesCorrectly_1() {
-        Event testEvent = new Event();
-        assertEquals(true, testEvent instanceof Event);
-    }
     @Test
-    public void newEvent_getGuestCount_2() {
-        Event testEvent = new Event(2);
-        assertEquals(2, testEvent.getGuestCount());
+    public void Event_getCost_1() {
+        Menu menu = new Menu();
+        Event event = new Event(100,
+                new ArrayList<MenuItem>(Arrays.asList(menu.getFood())),
+                new ArrayList<MenuItem>(Arrays.asList(menu.getBeverages())),
+                new ArrayList<MenuItem>(Arrays.asList(menu.getDrinks())),
+                new ArrayList<MenuItem>(Arrays.asList(menu.getEntertainment())),
+                null);
+        assertEquals(24500, event.getTotalCost());
     }
-    @Test
-    public void newEvent_getGuestCount_3() {
-        Event testEvent = new Event();
-        assertEquals(0, testEvent.getGuestCount());
-    }
-    @Test
-    public void Food_getCost_4() {
-        MenuItem testFood = new MenuItem("Pizza");
-        assertEquals(5, testFood.getCost());
-    }
-    @Test
-    public void Event_addFood_5() {
-        Event testEvent = new Event(0);
-        testEvent.addFood("Pizza");
-    }*/
-
-
 }
