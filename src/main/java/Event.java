@@ -2,16 +2,21 @@ import java.util.ArrayList;
 
 public class Event {
     private int mGuestCount;
-    private ArrayList<Food> mFoodList;
+    private ArrayList<String> mFoodList;
+    private ArrayList<String> mBeverageList;
+    private ArrayList<String> mDrinkList;
+    private ArrayList<String> mEntertainmentList;
+    private String mCouponCode;
 
-    public Event() {
+
+    /*public Event() {
         mGuestCount = 0;
-        mFoodList = new ArrayList<Food>();
+        mFoodList = new ArrayList<String>();
     }
 
     public Event(int guestCount){
         mGuestCount = guestCount;
-        mFoodList = new ArrayList<Food>();
+        mFoodList = new ArrayList<String>();
 
     }
 
@@ -21,7 +26,7 @@ public class Event {
 
     public int getCost(){
         int foodCost = 0;
-        for (Food food: mFoodList){
+        for (String food: mFoodList){
             foodCost += food.getCost();
 
         }
@@ -29,6 +34,7 @@ public class Event {
     }
 
     public void addFood(String foodName){
-        mFoodList.add(new Food(foodName));
+        mFoodList.add(new MenuItem(foodName));
     }
+    */
 }
